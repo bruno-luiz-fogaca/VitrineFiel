@@ -8,7 +8,7 @@ export function Abertura() {
       <div className={estilos.texto}>
         <h1>Seus imóveis, do jeito que são. Prontos para o próximo proprietário.</h1>
         <p className={estilos.lead}>
-          A Vitrine de Captação é uma página privada com os melhores imóveis da sua gestora, 3 vídeos feitos só
+          A Vitrine de Captação é uma página só da sua gestora, com os seus melhores imóveis, 3 vídeos feitos só
           com as fotos reais e os números que você escolher mostrar. Você manda o link antes ou depois da
           reunião, e o dono do imóvel vê o padrão do seu trabalho.
         </p>

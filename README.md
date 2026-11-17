@@ -24,7 +24,7 @@ O site também serve como **vitrine da própria Vitrine Fiel**. A gestora decide
 ## O que vendemos
 
 **Vitrine de Captação**, por R$397 em pagamento único:
-- uma página privada com os melhores imóveis da gestora;
+- uma página só da gestora, aberta, com os melhores imóveis dela;
 - 3 vídeos feitos só com as fotos reais;
 - fotos otimizadas;
 - roteiro de reunião e mensagem pronta;

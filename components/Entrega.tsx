@@ -2,9 +2,9 @@ import estilos from "./Entrega.module.css";
 
 const itens = [
   {
-    titulo: "Página de captação, privada",
+    titulo: "Página de captação da sua gestora",
     texto:
-      "Abre só por link com senha. Mostra seus melhores imóveis, seus vídeos e os números que você escolher: ocupação, nota média, quantidade de imóveis. Ou nenhum número, se preferir.",
+      "Um link para mandar a qualquer proprietário. Mostra seus melhores imóveis, seus vídeos e os números que você escolher: ocupação, nota média, quantidade de imóveis. Ou nenhum número, se preferir.",
   },
   {
     titulo: "3 vídeos-vitrine",

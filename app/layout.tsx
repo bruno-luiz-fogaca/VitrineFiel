@@ -20,7 +20,7 @@ const fonteTexto = Public_Sans({
 export const metadata: Metadata = {
   title: "Vitrine Fiel: páginas de captação para gestoras de temporada",
   description:
-    "Página privada com os melhores imóveis da sua gestora e vídeos feitos só com as fotos reais, para mandar ao próximo proprietário. R$397, pagamento único.",
+    "Uma página com os melhores imóveis da sua gestora e vídeos feitos só com as fotos reais, para mandar ao próximo proprietário. R$397, pagamento único.",
 };
 
 export const viewport: Viewport = {

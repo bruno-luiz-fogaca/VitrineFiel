@@ -16,7 +16,7 @@
 | # | Tema | Decisão | Data |
 |---|---|---|---|
 | R1 | Objetivo | Fazer a gestora pedir a **prévia grátis de 15 s**. Ver o README | 17/11/2026 |
-| R2 | Escopo da v1 | **Só a página de venda**, de uma página só. As Vitrines privadas dos clientes vêm depois da 1ª venda | 17/11/2026 |
+| R2 | Escopo da v1 | **Só a página de venda**, de uma página só. As Vitrines (páginas) dos clientes vêm depois da 1ª venda | 17/11/2026 |
 | R3 | Contato | **Só WhatsApp**: botão com mensagem pronta (`wa.me`) | 17/11/2026 |
 | R4 | Hospedagem | **GitHub Pages**, pelo repositório `bruno-luiz-fogaca/VitrineFiel` | 17/11/2026 |
 | R5 | Tecnologia | **Next.js + React + TypeScript**, em **exportação estática** (`output: "export"`), porque o GitHub Pages só serve arquivos estáticos. O fundador quer o resultado mais profissional possível | 17/11/2026 |
@@ -27,6 +27,7 @@
 | R10 | WhatsApp | Por enquanto, o número pessoal do fundador: **(41) 98409-5933**, no código `5541984095933`. Trocar quando houver um número comercial | 17/11/2026 |
 | R11 | Domínio | **`vitrinefiel.com.br`**. Até ele estar registrado e ligado, o site fica em `bruno-luiz-fogaca.github.io/VitrineFiel/` | 17/11/2026 |
 | R12 | Medição | **Sem contagem de visitas nem de cliques.** O fundador decidiu não medir por enquanto (a ideia do GoatCounter foi descartada) | 17/11/2026 |
+| R13 | Vitrine do cliente | A página de captação de cada gestora é **sempre aberta, sem senha**. A palavra "privada" saiu do site porque dava a entender que ninguém veria a página. Quem não quer expor números escolhe não mostrá-los | 17/11/2026 |
 
 ## Decisões pendentes
 - [x] ~~Número de WhatsApp comercial~~: decidido em R10.
@@ -82,7 +83,7 @@ Cada seção vira um componente, copiando os textos do protótipo:
 - [ ] Quando o domínio for registrado: ligar o `vitrinefiel.com.br` e remover o `basePath`
 
 ### Depois da v1 (fora do escopo agora)
-- Modelo da Vitrine privada do cliente (página com senha)
+- Modelo da Vitrine do cliente (página aberta, sem senha: ver R13)
 - Formulário de contato
 - Portfólio com casos reais (só com autorização dos clientes)
 
@@ -91,3 +92,4 @@ Cada seção vira um componente, copiando os textos do protótipo:
 - **17/11/2026 (2ª sessão):** o trabalho estava num segundo clone em `Desktop/Founder/Vitrine Fiel/05 Site/VitrineFiel`. Foi copiado para este repositório (`Desktop/Dev/Projetos/Foresi Tech/VitrineFiel`), que passa a ser **o único lugar do código do site**. Decididos R10 (WhatsApp), R11 (domínio) e R12 (medição). Apagado o clone antigo. **Fase 1 concluída:** protótipo movido para `prototipo/` e projeto Next.js criado, com geração do site testada.
   - Observação técnica: no Git Bash do Windows, rodar o build com `/VitrineFiel` exige `MSYS_NO_PATHCONV=1`, porque senão o Git Bash troca o caminho por `C:/Program Files/Git/VitrineFiel`. No GitHub Action (Linux) isso não acontece.
 - **17/11/2026 (2ª sessão, cont.):** **Fase 2 concluída:** as 9 seções viraram componentes React com CSS próprio (`components/*.module.css`), e as imagens provisórias foram para `public/amostra/`. Criado o Action de publicação. O fundador autorizou commits e push a cada etapa (R9).
+- **17/11/2026 (2ª sessão, cont.):** retirada a contagem de visitas e cliques (R12). A Vitrine do cliente passou a ser sempre aberta, e a palavra "privada" saiu do site (R13).

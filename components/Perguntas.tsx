@@ -13,7 +13,8 @@ const perguntas = [
   },
   {
     pergunta: "Não quero meus números de ocupação expostos.",
-    resposta: "A página é privada e abre só com link e senha. Você escolhe quais números aparecem, ou nenhum.",
+    resposta:
+      "Você escolhe quais números aparecem na página, ou nenhum. Sem números, ela mostra só os seus imóveis e os vídeos.",
   },
   {
     pergunta: "Vídeo feito com IA não parece falso?",
