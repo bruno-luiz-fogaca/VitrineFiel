@@ -7,7 +7,7 @@
 
 ## Onde estamos agora
 **Fases 1 e 2:** concluídas. O site em Next.js já tem todas as seções do protótipo, cada uma num componente em `components/`.
-**Publicação:** o GitHub Action (`.github/workflows/publicar.yml`) publica o site a cada push. Para funcionar, o fundador precisa ligar o GitHub Pages **uma vez** (ver "Decisões pendentes").
+**Publicação:** o site está **no ar** em https://bruno-luiz-fogaca.github.io/VitrineFiel/. O GitHub Action (`.github/workflows/publicar.yml`) publica de novo a cada push. O GitHub CLI (`gh`) está instalado e logado, e serve para acompanhar as publicações (`gh run list`).
 **Próximo passo:** **Fase 3** (conteúdo real), começando pela imagem de compartilhamento.
 **Fase 0:** falta só o fundador buscar as fotos do imóvel de exemplo, o que não trava as Fases 1 e 2.
 **Tarefas do fundador (fora do código):** registrar o domínio, ligar o GitHub Pages e buscar as fotos. Ver "Decisões pendentes".
@@ -34,7 +34,7 @@
 - [x] ~~Número de WhatsApp comercial~~: decidido em R10.
 - [ ] **Fotos do imóvel de exemplo** (o fundador busca): fotos reais do Unsplash ou do Pexels, de 8 a 15 do mesmo apartamento, salvas em `Desktop/Founder/Vitrine Fiel/04 Amostras/Fotos do imóvel de exemplo`.
 - [ ] **Registrar o domínio** (o fundador faz): `vitrinefiel.com.br` no [registro.br](https://registro.br), por cerca de R$40 por ano. Estava livre em 17/11/2026.
-- [ ] **Ligar o GitHub Pages** (o fundador faz, uma vez só): no GitHub, abra o repositório VitrineFiel, vá em **Settings → Pages** e, em **Source**, escolha **GitHub Actions**. Depois, em **Actions**, rode de novo o "Publicar site" se ele tiver falhado.
+- [x] **Ligar o GitHub Pages** (o fundador faz, uma vez só): no GitHub, abra o repositório VitrineFiel, vá em **Settings → Pages** e, em **Source**, escolha **GitHub Actions**. Depois, em **Actions**, rode de novo o "Publicar site" se ele tiver falhado. Feito em 17/11/2026.
 
 ## Passo a passo
 
@@ -79,8 +79,8 @@ Cada seção vira um componente, copiando os textos do protótipo:
 
 ### Fase 5: Publicação
 - [x] Criar um GitHub Action que gera o site e publica no GitHub Pages: `.github/workflows/publicar.yml` (17/11/2026)
-- [ ] Ligar o GitHub Pages no repositório (fundador)
-- [ ] Conferir o site em `https://bruno-luiz-fogaca.github.io/VitrineFiel/`
+- [x] Ligar o GitHub Pages no repositório (fundador) Feito em 17/11/2026.
+- [x] Conferir o site em `https://bruno-luiz-fogaca.github.io/VitrineFiel/` (17/11/2026: no ar)
 - [ ] Quando o domínio for registrado: ligar o `vitrinefiel.com.br` e remover o `basePath`
 
 ### Depois da v1 (fora do escopo agora)
@@ -94,3 +94,4 @@ Cada seção vira um componente, copiando os textos do protótipo:
 - **17/11/2026 (2ª sessão, cont.):** **Fase 2 concluída:** as 9 seções viraram componentes React com CSS próprio (`components/*.module.css`), e as imagens provisórias foram para `public/amostra/`. Criado o Action de publicação. O fundador autorizou commits e push a cada etapa (R9).
 - **17/11/2026 (2ª sessão, cont.):** retirada a contagem de visitas e cliques (R12). A Vitrine do cliente passou a ser sempre aberta, e a palavra "privada" saiu do site (R13).
 - **17/11/2026 (2ª sessão, cont.):** textos simplificados para a gestora entender o produto rápido. Abertura diz em uma frase o que fazemos; "Como funciona" passou a vir logo depois, em 3 passos; o pacote virou 4 itens curtos (roteiro + mensagem viraram "Kit para a reunião"); Nada inventado e Preço com menos texto. Saiu do site a oferta das 5 primeiras gestoras (1 atualização grátis): o fundador confirmou que ela fica só na conversa pelo WhatsApp (R14).
+- **17/11/2026 (2ª sessão, cont.):** instalado e logado o GitHub CLI. GitHub Pages ligado e site publicado pela primeira vez.
