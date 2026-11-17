@@ -1,0 +1,13 @@
+# Dependências (o npm baixa de novo com "npm install")
+node_modules/
+
+# Arquivos gerados pelo Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Logs e configurações locais
+npm-debug.log*
+.env*.local
+.DS_Store

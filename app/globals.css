@@ -1,0 +1,51 @@
+/* Vitrine Fiel
+   Ideia visual: a "vistoria". Papel claro e frio, tinta azul-petróleo,
+   amarelo de fita métrica só para marcar o que foi conferido.
+   As fontes vêm do next/font (ver app/layout.tsx). */
+
+:root {
+  --papel: #eef0ec;
+  --papel-claro: #f8f9f6;
+  --tinta: #17324d;
+  --tinta-suave: #4c5f70;
+  --concreto: #c9cec8;
+  --fita: #f2c230;
+  --carimbo: #2f6b4f;
+  --raio: 6px;
+  --largura: 1120px;
+  --texto: var(--fonte-texto), system-ui, sans-serif;
+  --titulo: var(--fonte-titulo), var(--fonte-texto), sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 400 1.0625rem/1.6 var(--texto);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+h1, h2, h3 { font-family: var(--titulo); line-height: 1.08; margin: 0; letter-spacing: -0.015em; }
+h1 { font-size: clamp(2.2rem, 4.4vw, 3.5rem); font-weight: 800; font-variation-settings: "opsz" 96; max-width: 17ch; }
+h2 { font-size: clamp(1.75rem, 3.2vw, 2.6rem); font-weight: 700; font-variation-settings: "opsz" 60; max-width: 22ch; }
+h3 { font-size: 1.2rem; font-weight: 700; font-variation-settings: "opsz" 24; letter-spacing: 0; }
+p { margin: 0; max-width: 62ch; }
+
+a { color: inherit; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+  outline: 3px solid var(--fita);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.visualmente-oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
