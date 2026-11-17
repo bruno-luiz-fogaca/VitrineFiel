@@ -13,7 +13,7 @@ export function Topo() {
         <a href="#entrega">O que você recebe</a>
         <a href="#como">Como funciona</a>
         <a href="#preco">Preço</a>
-        <BotaoWhatsapp local="topo" tamanho="pequeno">
+        <BotaoWhatsapp tamanho="pequeno">
           Pedir prévia grátis
         </BotaoWhatsapp>
       </nav>

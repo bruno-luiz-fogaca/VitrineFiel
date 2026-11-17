@@ -8,9 +8,9 @@
 ## Onde estamos agora
 **Fases 1 e 2:** concluídas. O site em Next.js já tem todas as seções do protótipo, cada uma num componente em `components/`.
 **Publicação:** o GitHub Action (`.github/workflows/publicar.yml`) publica o site a cada push. Para funcionar, o fundador precisa ligar o GitHub Pages **uma vez** (ver "Decisões pendentes").
-**Próximo passo:** **Fase 3** (conteúdo real), começando pela contagem do GoatCounter e pela imagem de compartilhamento.
+**Próximo passo:** **Fase 3** (conteúdo real), começando pela imagem de compartilhamento.
 **Fase 0:** falta só o fundador buscar as fotos do imóvel de exemplo, o que não trava as Fases 1 e 2.
-**Tarefas do fundador (fora do código):** registrar o domínio, criar a conta no GoatCounter e buscar as fotos. Ver "Decisões pendentes".
+**Tarefas do fundador (fora do código):** registrar o domínio, ligar o GitHub Pages e buscar as fotos. Ver "Decisões pendentes".
 
 ## Decisões tomadas (requisitos)
 | # | Tema | Decisão | Data |
@@ -26,15 +26,13 @@
 | R9 | Git | O fundador autorizou o Claude a **commitar e publicar (push) a cada etapa** concluída do site | 17/11/2026 |
 | R10 | WhatsApp | Por enquanto, o número pessoal do fundador: **(41) 98409-5933**, no código `5541984095933`. Trocar quando houver um número comercial | 17/11/2026 |
 | R11 | Domínio | **`vitrinefiel.com.br`**. Até ele estar registrado e ligado, o site fica em `bruno-luiz-fogaca.github.io/VitrineFiel/` | 17/11/2026 |
-| R12 | Medição | **GoatCounter**: grátis e sem cookies, então dispensa o aviso de cookies da LGPD. Mede visitas, origem (Instagram, WhatsApp), aparelho e **cliques no botão do WhatsApp**, o número principal | 17/11/2026 |
+| R12 | Medição | **Sem contagem de visitas nem de cliques.** O fundador decidiu não medir por enquanto (a ideia do GoatCounter foi descartada) | 17/11/2026 |
 
 ## Decisões pendentes
 - [x] ~~Número de WhatsApp comercial~~: decidido em R10.
-- [x] ~~Medição de visitas~~: decidido em R12.
 - [ ] **Fotos do imóvel de exemplo** (o fundador busca): fotos reais do Unsplash ou do Pexels, de 8 a 15 do mesmo apartamento, salvas em `Desktop/Founder/Vitrine Fiel/04 Amostras/Fotos do imóvel de exemplo`.
 - [ ] **Registrar o domínio** (o fundador faz): `vitrinefiel.com.br` no [registro.br](https://registro.br), por cerca de R$40 por ano. Estava livre em 17/11/2026.
 - [ ] **Ligar o GitHub Pages** (o fundador faz, uma vez só): no GitHub, abra o repositório VitrineFiel, vá em **Settings → Pages** e, em **Source**, escolha **GitHub Actions**. Depois, em **Actions**, rode de novo o "Publicar site" se ele tiver falhado.
-- [ ] **Criar a conta no GoatCounter** (o fundador faz): em [goatcounter.com](https://www.goatcounter.com), com o código `vitrinefiel`. O painel fica em `vitrinefiel.goatcounter.com`.
 
 ## Passo a passo
 
@@ -61,14 +59,13 @@ Cada seção vira um componente, copiando os textos do protótipo:
 - [x] Nada inventado (3 regras): `NadaInventado.tsx`
 - [x] Preço, garantia e limite de 3 por mês: `Preco.tsx`
 - [x] Perguntas frequentes: `Perguntas.tsx`
-- [x] Contato (WhatsApp) e rodapé: `Contato.tsx` e `Rodape.tsx`. Todos os botões usam `BotaoWhatsapp.tsx`, que já marca o local do botão para o GoatCounter
+- [x] Contato (WhatsApp) e rodapé: `Contato.tsx` e `Rodape.tsx`. Todos os botões usam `BotaoWhatsapp.tsx`
 - [x] Conferido lado a lado com o protótipo em 1366 px: visual igual (17/11/2026)
 
 ### Fase 3: Conteúdo real
 - [ ] Trocar as imagens provisórias do comparador por foto real e quadro de vídeo real (mesmo enquadramento, 3:2)
 - [x] Colocar o WhatsApp no protótipo (`script.js`) (17/11/2026)
 - [ ] Colocar o WhatsApp na versão Next.js
-- [ ] GoatCounter: contar as visitas e os cliques em cada botão "Pedir prévia" (topo, abertura, preço e contato), para saber qual botão funciona melhor
 - [ ] Título, descrição e imagem de compartilhamento (aparece quando o link é mandado no WhatsApp)
 - [ ] Favicon com o símbolo da marca
 
@@ -91,6 +88,6 @@ Cada seção vira um componente, copiando os textos do protótipo:
 
 ## Registro de sessões
 - **17/11/2026:** criado o protótipo de uma página com o visual "vistoria" e o comparador. Escritos o README e este arquivo, e levantados os requisitos R1 a R9.
-- **17/11/2026 (2ª sessão):** o trabalho estava num segundo clone em `Desktop/Founder/Vitrine Fiel/05 Site/VitrineFiel`. Foi copiado para este repositório (`Desktop/Dev/Projetos/Foresi Tech/VitrineFiel`), que passa a ser **o único lugar do código do site**. Decididos R10 (WhatsApp), R11 (domínio) e R12 (GoatCounter). Apagado o clone antigo. **Fase 1 concluída:** protótipo movido para `prototipo/` e projeto Next.js criado, com geração do site testada.
+- **17/11/2026 (2ª sessão):** o trabalho estava num segundo clone em `Desktop/Founder/Vitrine Fiel/05 Site/VitrineFiel`. Foi copiado para este repositório (`Desktop/Dev/Projetos/Foresi Tech/VitrineFiel`), que passa a ser **o único lugar do código do site**. Decididos R10 (WhatsApp), R11 (domínio) e R12 (medição). Apagado o clone antigo. **Fase 1 concluída:** protótipo movido para `prototipo/` e projeto Next.js criado, com geração do site testada.
   - Observação técnica: no Git Bash do Windows, rodar o build com `/VitrineFiel` exige `MSYS_NO_PATHCONV=1`, porque senão o Git Bash troca o caminho por `C:/Program Files/Git/VitrineFiel`. No GitHub Action (Linux) isso não acontece.
 - **17/11/2026 (2ª sessão, cont.):** **Fase 2 concluída:** as 9 seções viraram componentes React com CSS próprio (`components/*.module.css`), e as imagens provisórias foram para `public/amostra/`. Criado o Action de publicação. O fundador autorizou commits e push a cada etapa (R9).

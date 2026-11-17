@@ -9,7 +9,7 @@ export function Contato() {
         Mande o link de um anúncio ou de uma pasta de fotos. Em até 2 dias você recebe uma prévia de 15 segundos,
         sem compromisso.
       </p>
-      <BotaoWhatsapp local="contato" tamanho="grande">
+      <BotaoWhatsapp tamanho="grande">
         Pedir prévia grátis pelo WhatsApp
       </BotaoWhatsapp>
     </section>

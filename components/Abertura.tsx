@@ -13,7 +13,7 @@ export function Abertura() {
           reunião, e o dono do imóvel vê o padrão do seu trabalho.
         </p>
         <div className={estilos.acoes}>
-          <BotaoWhatsapp local="abertura">Pedir prévia grátis de 15 segundos</BotaoWhatsapp>
+          <BotaoWhatsapp>Pedir prévia grátis de 15 segundos</BotaoWhatsapp>
           <a className="link" href="#preco">
             Ver preço
           </a>

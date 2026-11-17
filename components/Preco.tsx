@@ -22,7 +22,7 @@ export function Preco() {
             <span>R$</span>397
           </p>
           <p>Página privada com hospedagem por 12 meses, 3 vídeos, fotos otimizadas, roteiro de reunião e checklist.</p>
-          <BotaoWhatsapp local="preco">Pedir prévia grátis</BotaoWhatsapp>
+          <BotaoWhatsapp>Pedir prévia grátis</BotaoWhatsapp>
         </div>
         <dl className={estilos.extras}>
           {extras.map((extra) => (
