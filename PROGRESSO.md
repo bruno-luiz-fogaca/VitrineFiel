@@ -28,6 +28,7 @@
 | R11 | Domínio | **`vitrinefiel.com.br`**. Até ele estar registrado e ligado, o site fica em `bruno-luiz-fogaca.github.io/VitrineFiel/` | 17/11/2026 |
 | R12 | Medição | **Sem contagem de visitas nem de cliques.** O fundador decidiu não medir por enquanto (a ideia do GoatCounter foi descartada) | 17/11/2026 |
 | R13 | Vitrine do cliente | A página de captação de cada gestora é **sempre aberta, sem senha**. A palavra "privada" saiu do site porque dava a entender que ninguém veria a página. Quem não quer expor números escolhe não mostrá-los | 17/11/2026 |
+| R14 | Ofertas | A oferta das 5 primeiras gestoras (1 atualização grátis em troca do uso no portfólio) **não aparece no site**. É feita só na conversa pelo WhatsApp | 17/11/2026 |
 
 ## Decisões pendentes
 - [x] ~~Número de WhatsApp comercial~~: decidido em R10.
@@ -92,4 +93,4 @@ Cada seção vira um componente, copiando os textos do protótipo:
   - Observação técnica: no Git Bash do Windows, rodar o build com `/VitrineFiel` exige `MSYS_NO_PATHCONV=1`, porque senão o Git Bash troca o caminho por `C:/Program Files/Git/VitrineFiel`. No GitHub Action (Linux) isso não acontece.
 - **17/11/2026 (2ª sessão, cont.):** **Fase 2 concluída:** as 9 seções viraram componentes React com CSS próprio (`components/*.module.css`), e as imagens provisórias foram para `public/amostra/`. Criado o Action de publicação. O fundador autorizou commits e push a cada etapa (R9).
 - **17/11/2026 (2ª sessão, cont.):** retirada a contagem de visitas e cliques (R12). A Vitrine do cliente passou a ser sempre aberta, e a palavra "privada" saiu do site (R13).
-- **17/11/2026 (2ª sessão, cont.):** textos simplificados para a gestora entender o produto rápido. Abertura diz em uma frase o que fazemos; "Como funciona" passou a vir logo depois, em 3 passos; o pacote virou 4 itens curtos (roteiro + mensagem viraram "Kit para a reunião"); Nada inventado e Preço com menos texto. Saiu do site a oferta das 5 primeiras gestoras (1 atualização grátis), a confirmar com o fundador.
+- **17/11/2026 (2ª sessão, cont.):** textos simplificados para a gestora entender o produto rápido. Abertura diz em uma frase o que fazemos; "Como funciona" passou a vir logo depois, em 3 passos; o pacote virou 4 itens curtos (roteiro + mensagem viraram "Kit para a reunião"); Nada inventado e Preço com menos texto. Saiu do site a oferta das 5 primeiras gestoras (1 atualização grátis): o fundador confirmou que ela fica só na conversa pelo WhatsApp (R14).
