@@ -17,7 +17,7 @@
 |---|---|---|---|
 | R1 | Objetivo | Fazer a gestora pedir a **prévia grátis de 15 s**. Ver o README | 17/11/2026 |
 | R2 | Escopo da v1 | **Só a página de venda**, de uma página só. As Vitrines (páginas) dos clientes vêm depois da 1ª venda | 17/11/2026 |
-| R3 | Contato | **Só WhatsApp**: botão com mensagem pronta (`wa.me`) | 17/11/2026 |
+| R3 | Contato | **Só WhatsApp**: botão com mensagem pronta (`wa.me`). O site **não tem formulário** e não pede dado nenhum: as informações da gestora são pedidas na conversa pelo WhatsApp | 17/11/2026 |
 | R4 | Hospedagem | **GitHub Pages**, pelo repositório `bruno-luiz-fogaca/VitrineFiel` | 17/11/2026 |
 | R5 | Tecnologia | **Next.js + React + TypeScript**, em **exportação estática** (`output: "export"`), porque o GitHub Pages só serve arquivos estáticos. O fundador quer o resultado mais profissional possível | 17/11/2026 |
 | R6 | Visual | Visual "vistoria": papel `#eef0ec`, tinta `#17324d`, fita `#f2c230`, carimbo `#2f6b4f`. Fontes Bricolage Grotesque (títulos) e Public Sans (texto). O elemento marcante é o **comparador** que se arrasta (cena do vídeo × foto original) | 17/11/2026 |
@@ -84,7 +84,6 @@ Cada seção vira um componente, copiando os textos do protótipo:
 
 ### Depois da v1 (fora do escopo agora)
 - Modelo da Vitrine do cliente (página aberta, sem senha: ver R13)
-- Formulário de contato
 - Portfólio com casos reais (só com autorização dos clientes)
 
 ## Registro de sessões
