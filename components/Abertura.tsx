@@ -6,19 +6,18 @@ export function Abertura() {
   return (
     <section className={estilos.abertura}>
       <div className={estilos.texto}>
-        <h1>Seus imóveis, do jeito que são. Prontos para o próximo proprietário.</h1>
+        <h1>Vídeos e uma página dos seus imóveis, para fechar com novos proprietários.</h1>
         <p className={estilos.lead}>
-          A Vitrine de Captação é uma página só da sua gestora, com os seus melhores imóveis, 3 vídeos feitos só
-          com as fotos reais e os números que você escolher mostrar. Você manda o link antes ou depois da
-          reunião, e o dono do imóvel vê o padrão do seu trabalho.
+          Você manda as fotos que já tem. A gente devolve 3 vídeos e uma página com os seus melhores imóveis, para
+          você mandar ao dono do imóvel antes da reunião.
         </p>
         <div className={estilos.acoes}>
-          <BotaoWhatsapp>Pedir prévia grátis de 15 segundos</BotaoWhatsapp>
-          <a className="link" href="#preco">
-            Ver preço
+          <BotaoWhatsapp>Pedir prévia grátis</BotaoWhatsapp>
+          <a className="link" href="#como">
+            Ver como funciona
           </a>
         </div>
-        <p className="nota">Para gestoras de temporada de 20 a 40 imóveis, em todo o Brasil.</p>
+        <p className="nota">Para gestoras de aluguel por temporada. A prévia de 15 segundos é grátis.</p>
       </div>
       <Comparador />
     </section>

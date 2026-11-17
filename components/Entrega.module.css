@@ -1,4 +1,5 @@
-/* Vistoria: lista de entrega com marcação de conferido */
+/* Vistoria: lista do pacote com marcação de conferido */
+.titulo { margin-bottom: 32px; }
 .vistoria { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
 
 .vistoria li {

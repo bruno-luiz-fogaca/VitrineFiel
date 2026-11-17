@@ -1,31 +1,26 @@
 import estilos from "./ComoFunciona.module.css";
 
+// Os 3 passos são a explicação do produto inteiro: o que a gestora faz,
+// o que a gente faz e o que ela ganha no fim.
 const etapas = [
   {
-    titulo: "Você manda o link",
-    texto: "Da pasta de fotos dos seus 3 melhores imóveis, e um print dos números que quer mostrar.",
+    titulo: "Você manda as fotos",
+    texto: "As fotos que você já tem dos seus 3 melhores imóveis. Pode ser o link do anúncio.",
   },
   {
-    titulo: "Prévia grátis em 2 dias",
-    texto: "15 segundos de um imóvel seu, já com a cena ao lado da foto original. Você decide se segue.",
+    titulo: "A gente faz os vídeos e a página",
+    texto: "Prévia grátis em 2 dias. Tudo pronto em 7 dias úteis depois do pagamento.",
   },
   {
-    titulo: "Entrega em 7 dias úteis",
-    texto: "Página, vídeos, fotos, roteiro e checklist, depois do pagamento.",
-  },
-  {
-    titulo: "Você manda ao proprietário",
-    texto: "Antes ou depois da reunião, com a mensagem pronta.",
+    titulo: "Você manda o link ao proprietário",
+    texto: "Pelo WhatsApp, antes da reunião. Ele chega já tendo visto o seu trabalho.",
   },
 ];
 
 export function ComoFunciona() {
   return (
     <section id="como" className={`secao ${estilos.faixa}`}>
-      <div className="secao-cabeca">
-        <h2>Como funciona</h2>
-        <p>Você só manda o link das fotos. O resto é com a gente.</p>
-      </div>
+      <h2 className={estilos.titulo}>Como funciona</h2>
       <ol className={estilos.etapas}>
         {etapas.map((etapa) => (
           <li key={etapa.titulo}>

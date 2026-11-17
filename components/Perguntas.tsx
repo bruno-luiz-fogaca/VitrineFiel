@@ -9,7 +9,7 @@ const perguntas = [
   {
     pergunta: "A gente já faz vídeo no Canva ou no CapCut.",
     resposta:
-      "Então vocês já sabem o valor de mostrar bem os imóveis. A diferença é o tempo da sua equipe, a página pronta para proprietários e o checklist de fidelidade. A prévia é grátis para vocês compararem com o que já fazem.",
+      "Então vocês já sabem o valor de mostrar bem os imóveis. A diferença é o tempo da sua equipe, a página pronta para proprietários e a conferência de cada cena com a foto original. A prévia é grátis para vocês compararem com o que já fazem.",
   },
   {
     pergunta: "Não quero meus números de ocupação expostos.",

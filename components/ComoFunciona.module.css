@@ -6,7 +6,7 @@
   padding-left: max(24px, calc((100% - var(--largura)) / 2 + 24px));
   padding-right: max(24px, calc((100% - var(--largura)) / 2 + 24px));
 }
-.faixa :global(.secao-cabeca) p { color: #c3cfd9; }
+.titulo { margin-bottom: 40px; }
 
 /* Etapas numeradas: sequência real */
 .etapas {
@@ -15,8 +15,8 @@
   padding: 0;
   counter-reset: etapa;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
 }
 .etapas li {
   counter-increment: etapa;
@@ -30,10 +30,9 @@
 .etapas p { color: #c3cfd9; }
 
 @media (max-width: 900px) {
-  .etapas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .etapas { grid-template-columns: 1fr; gap: 28px; }
 }
 
 @media (max-width: 640px) {
   .faixa { padding-left: 16px; padding-right: 16px; }
-  .etapas { grid-template-columns: 1fr; }
 }

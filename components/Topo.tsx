@@ -10,8 +10,8 @@ export function Topo() {
         Vitrine Fiel
       </a>
       <nav className={estilos.nav} aria-label="Seções">
-        <a href="#entrega">O que você recebe</a>
         <a href="#como">Como funciona</a>
+        <a href="#entrega">O que vem no pacote</a>
         <a href="#preco">Preço</a>
         <BotaoWhatsapp tamanho="pequeno">
           Pedir prévia grátis

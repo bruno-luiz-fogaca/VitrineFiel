@@ -18,8 +18,8 @@ export default function Inicio() {
       <Topo />
       <main id="conteudo">
         <Abertura />
-        <Entrega />
         <ComoFunciona />
+        <Entrega />
         <NadaInventado />
         <Preco />
         <Perguntas />
