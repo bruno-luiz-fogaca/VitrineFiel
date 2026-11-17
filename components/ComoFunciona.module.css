@@ -1,0 +1,39 @@
+/* Faixa escura que ocupa a largura toda, com o conteúdo alinhado ao resto */
+.faixa {
+  max-width: none;
+  background: var(--tinta);
+  color: var(--papel-claro);
+  padding-left: max(24px, calc((100% - var(--largura)) / 2 + 24px));
+  padding-right: max(24px, calc((100% - var(--largura)) / 2 + 24px));
+}
+.faixa :global(.secao-cabeca) p { color: #c3cfd9; }
+
+/* Etapas numeradas: sequência real */
+.etapas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: etapa;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+.etapas li {
+  counter-increment: etapa;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  padding-top: 18px;
+  border-top: 3px solid var(--fita);
+}
+.etapas li::before { content: counter(etapa); font: 800 2.4rem/1 var(--titulo); color: var(--fita); }
+.etapas p { color: #c3cfd9; }
+
+@media (max-width: 900px) {
+  .etapas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .faixa { padding-left: 16px; padding-right: 16px; }
+  .etapas { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,31 @@
+.topo {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 800 1.25rem var(--titulo);
+  text-decoration: none;
+}
+
+.simbolo { width: 30px; height: 30px; }
+
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav a:not(:global(.botao)) { text-decoration: none; font-size: 0.98rem; color: var(--tinta-suave); }
+.nav a:not(:global(.botao)):hover { color: var(--tinta); text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .nav a:not(:global(.botao)) { display: none; }
+}
+
+@media (max-width: 640px) {
+  .topo { padding-left: 16px; padding-right: 16px; }
+}

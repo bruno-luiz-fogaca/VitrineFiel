@@ -1,0 +1,2 @@
+.contato { display: grid; gap: 18px; justify-items: start; padding-bottom: 96px; }
+.contato p { font-size: 1.1rem; color: var(--tinta-suave); }

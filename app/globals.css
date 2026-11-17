@@ -49,3 +49,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap;
 }
+
+/* Atalho para quem navega pelo teclado: aparece ao apertar Tab */
+.pular {
+  position: absolute; left: 16px; top: -60px; z-index: 10;
+  background: var(--tinta); color: var(--papel-claro); padding: 10px 14px; border-radius: var(--raio);
+}
+.pular:focus { top: 12px; }
+
+/* Botões (usados em várias seções) */
+.botao {
+  display: inline-block; background: var(--tinta); color: var(--papel-claro);
+  font: 700 1rem var(--texto); text-decoration: none;
+  padding: 14px 22px; border-radius: var(--raio);
+  border: 2px solid var(--tinta);
+}
+.botao:hover { background: var(--papel-claro); color: var(--tinta); }
+.botao-pequeno { padding: 9px 16px; font-size: 0.95rem; }
+.botao-grande { padding: 18px 28px; font-size: 1.1rem; }
+.link { font-weight: 700; text-underline-offset: 4px; }
+
+.nota { font-size: 0.92rem; color: var(--tinta-suave); }
+
+/* Seções: largura e espaçamento comuns */
+.secao { max-width: var(--largura); margin: 0 auto; padding: 72px 24px; }
+.secao-cabeca { display: grid; gap: 12px; margin-bottom: 40px; }
+.secao-cabeca p { color: var(--tinta-suave); font-size: 1.1rem; }
+
+@media (max-width: 640px) {
+  body { font-size: 1rem; }
+  .secao { padding: 56px 16px; }
+  .botao-pequeno { padding: 8px 12px; font-size: 0.9rem; }
+}

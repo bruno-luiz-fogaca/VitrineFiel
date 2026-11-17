@@ -1,0 +1,19 @@
+.perguntas h2 { margin-bottom: 28px; }
+
+.perguntas details { border-top: 1px solid var(--concreto); }
+.perguntas details:last-of-type { border-bottom: 1px solid var(--concreto); }
+
+.perguntas summary {
+  cursor: pointer;
+  padding: 18px 0;
+  font: 700 1.1rem var(--titulo);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.perguntas summary::-webkit-details-marker { display: none; }
+.perguntas summary::after { content: "+"; font-size: 1.5rem; line-height: 1; color: var(--tinta-suave); }
+.perguntas details[open] summary::after { content: "–"; }
+
+.perguntas details p { padding: 0 0 20px; color: var(--tinta-suave); }

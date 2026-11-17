@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Imagem provisória da foto original">
+<rect width="1200" height="800" fill="#dfe3dd"/>
+<g transform="translate(600 400) scale(1.0) translate(-600 -400)"><g fill="none" stroke="#17324d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<path d="M0 560 L1200 560"/>
+<rect x="720" y="150" width="340" height="300" rx="4"/><path d="M890 150v300M720 300h340"/>
+<path d="M160 420h420v-70a30 30 0 0 0-30-30H190a30 30 0 0 0-30 30z"/><path d="M140 420h460v80H140z"/><path d="M170 500v40M570 500v40"/>
+<rect x="250" y="250" width="160" height="110" rx="3"/>
+<path d="M640 560v-90h60v90"/><path d="M670 470c-40-40-30-110 0-140 30 30 40 100 0 140z"/>
+<path d="M300 600h300l-30 60H330z"/>
+</g></g>
+<rect x="40" y="720" width="430" height="48" rx="6" fill="#17324d"/>
+<text x="60" y="752" font-family="Arial, sans-serif" font-size="22" fill="#f8f9f6">Provisório: trocar pela foto real</text>
+</svg>

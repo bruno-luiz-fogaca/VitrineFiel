@@ -1,0 +1,22 @@
+.fiel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.texto { display: grid; gap: 18px; }
+.texto p { color: var(--tinta-suave); }
+
+.regras { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.regras li {
+  padding: 18px 20px;
+  background: var(--papel-claro);
+  border-left: 4px solid var(--carimbo);
+  border-radius: 0 var(--raio) var(--raio) 0;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .fiel { grid-template-columns: 1fr; gap: 28px; }
+}

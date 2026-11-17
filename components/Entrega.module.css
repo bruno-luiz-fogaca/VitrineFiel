@@ -1,0 +1,30 @@
+/* Vistoria: lista de entrega com marcação de conferido */
+.vistoria { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
+
+.vistoria li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 18rem) minmax(0, 1fr);
+  gap: 8px 24px;
+  align-items: start;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--concreto);
+}
+
+.vistoria li::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-top: 2px;
+  border: 2px solid var(--tinta);
+  border-radius: 3px;
+  background: var(--fita)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%2317324d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / 18px no-repeat;
+}
+
+.vistoria p { color: var(--tinta-suave); }
+
+@media (max-width: 640px) {
+  .vistoria li { grid-template-columns: 36px minmax(0, 1fr); }
+  .vistoria li p { grid-column: 2; }
+}

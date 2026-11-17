@@ -1,0 +1,44 @@
+.quadro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  border: 2px solid var(--tinta);
+  border-radius: var(--raio);
+  background: var(--papel-claro);
+}
+
+.principal {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  padding: 32px;
+  border-right: 2px solid var(--tinta);
+}
+.principal :global(.botao) { justify-self: start; margin-top: 6px; }
+
+.nome { font-weight: 700; }
+.valor { font: 800 4.5rem/1 var(--titulo); letter-spacing: -0.03em; }
+.valor span { font-size: 1.6rem; vertical-align: 1.9rem; margin-right: 4px; }
+
+.extras { margin: 0; padding: 32px; display: grid; gap: 18px; align-content: start; }
+.extras div { display: grid; gap: 2px; padding-bottom: 16px; border-bottom: 1px solid var(--concreto); }
+.extras div:last-child { border-bottom: 0; padding-bottom: 0; }
+.extras dt { color: var(--tinta-suave); }
+.extras dd { margin: 0; font-weight: 700; font-size: 1.1rem; }
+
+.garantia {
+  margin-top: 28px;
+  display: grid;
+  gap: 8px;
+  padding: 22px 24px;
+  border-left: 4px solid var(--carimbo);
+  background: var(--papel-claro);
+  border-radius: 0 var(--raio) var(--raio) 0;
+}
+
+.fundadoras { margin-top: 22px; color: var(--tinta-suave); }
+
+@media (max-width: 640px) {
+  .quadro { grid-template-columns: 1fr; }
+  .principal { border-right: 0; border-bottom: 2px solid var(--tinta); padding: 24px; }
+  .extras { padding: 24px; }
+}

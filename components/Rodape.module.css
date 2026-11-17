@@ -1,0 +1,15 @@
+.rodape {
+  border-top: 1px solid var(--concreto);
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 28px 24px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--tinta-suave);
+}
+
+@media (max-width: 640px) {
+  .rodape { padding-left: 16px; padding-right: 16px; }
+}
